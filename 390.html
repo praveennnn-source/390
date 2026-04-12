@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KTM Duke 390 | Corner Rocket</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .ktm-orange { color: #FF6600; }
+        .bg-ktm-orange { background-color: #FF6600; }
+        .border-ktm-orange { border-color: #FF6600; }
+        body { background-color: #09090b; color: #ffffff; font-family: 'Inter', sans-serif; }
+        .hero-gradient { background: linear-gradient(rgba(0,0,0,0.6), #09090b); }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10 py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <h1 class="text-2xl font-black tracking-tighter italic">KTM <span class="ktm-orange">390 DUKE</span></h1>
+            <div class="space-x-8 hidden md:flex font-bold uppercase text-sm tracking-widest">
+                <a href="#specs" class="hover:text-[#FF6600] transition">Specs</a>
+                <a href="#features" class="hover:text-[#FF6600] transition">Features</a>
+                <a href="#" class="bg-ktm-orange px-4 py-2 rounded-sm text-black">Book Test Ride</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1599819811279-d5ad9cccf838?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-40"></div>
+        <div class="absolute inset-0 hero-gradient"></div>
+        
+        <div class="relative z-10 text-center px-4" data-aos="zoom-out" data-aos-duration="1500">
+            <h2 class="text-6xl md:text-8xl font-black italic uppercase leading-none">The Corner <br><span class="ktm-orange">Rocket.</span></h2>
+            <p class="mt-6 text-xl text-gray-400 max-w-2xl mx-auto">More muscle, more tech, more attitude. The 2026 KTM 390 Duke is here to rule the streets.</p>
+            <button class="mt-10 bg-ktm-orange text-black font-black py-4 px-10 rounded-sm uppercase tracking-widest hover:scale-105 transition-transform animate-pulse">
+                Engage Launch Control
+            </button>
+        </div>
+    </section>
+
+    <section id="specs" class="py-24 container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="border-l-4 border-ktm-orange p-6 bg-white/5" data-aos="fade-up" data-aos-delay="100">
+                <p class="text-gray-400 uppercase text-xs font-bold">Displacement</p>
+                <h3 class="text-4xl font-black">398.6 <span class="text-sm">cc</span></h3>
+            </div>
+            <div class="border-l-4 border-ktm-orange p-6 bg-white/5" data-aos="fade-up" data-aos-delay="200">
+                <p class="text-gray-400 uppercase text-xs font-bold">Max Power</p>
+                <h3 class="text-4xl font-black">45.3 <span class="text-sm">HP</span></h3>
+            </div>
+            <div class="border-l-4 border-ktm-orange p-6 bg-white/5" data-aos="fade-up" data-aos-delay="300">
+                <p class="text-gray-400 uppercase text-xs font-bold">Max Torque</p>
+                <h3 class="text-4xl font-black">39 <span class="text-sm">Nm</span></h3>
+            </div>
+            <div class="border-l-4 border-ktm-orange p-6 bg-white/5" data-aos="fade-up" data-aos-delay="400">
+                <p class="text-gray-400 uppercase text-xs font-bold">Weight</p>
+                <h3 class="text-4xl font-black">168 <span class="text-sm">kg</span></h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="bg-zinc-950 py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-black italic uppercase mb-12">Technical <span class="ktm-orange">Arsenal</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="group relative overflow-hidden rounded-xl bg-zinc-900 p-8 border border-white/5 hover:border-ktm-orange/50 transition" data-aos="fade-right">
+                    <h4 class="text-2xl font-bold mb-4">WP APEX Suspension</h4>
+                    <p class="text-gray-400">43mm Open Cartridge USD forks with 5-click adjustable compression and rebound. Tailored for surgical precision.</p>
+                </div>
+                <div class="group relative overflow-hidden rounded-xl bg-zinc-900 p-8 border border-white/5 hover:border-ktm-orange/50 transition" data-aos="fade-left">
+                    <h4 class="text-2xl font-bold mb-4">5" TFT Display</h4>
+                    <p class="text-gray-400">All-new bonded glass display with turn-by-turn navigation, Lap Timer, and Supermoto ABS mode toggle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/10 text-center text-gray-500 text-sm">
+        <p>© 2026 KTM AG | READY TO RACE</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: false,
+        });
+    </script>
+</body>
+</html>
