@@ -1,5 +1,5 @@
-sudo apt update
-sudo apt install docker.io -y
+FROM nginx:latest
 
-sudo systemctl start docker
-sudo systemctl enable docker
+COPY . /usr/share/nginx/html
+
+EXPOSE 80
