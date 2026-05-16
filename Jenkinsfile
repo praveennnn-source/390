@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git ''
+                git 'https://github.com/praveennnn-source/390.git'
             }
         }
 
